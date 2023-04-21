@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Введите текст:"/>
+        <TextBox Grid.Row="1" x:Name="MyTextBox" Width="200"/>
+        <Button Grid.Row="2" Content="Нажать" Click="Button_Click" Width="300" Height="50"/>
     </Grid>
 </Window>
