@@ -24,5 +24,10 @@ namespace WpfApp2
         {
             InitializeComponent();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string text = MyTextBox.Text;
+            MessageBox.Show($"Вы ввели: {text}");
+        }
     }
 }
